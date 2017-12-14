@@ -1,0 +1,131 @@
+.search-form {
+    max-width: 1140px;
+    position: relative;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    background-color: #250957;
+    padding: 2em 3.5em;
+    margin: -6% auto 30px auto;
+}
+.search-form .btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.search-form h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: -15px;
+}
+.search-form form>div {
+    overflow: hidden;
+}
+.search-form .dropdown {
+    background-color: #fff;
+    border-right: 1px solid #e1e1e1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+.search-form .dropdown::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background-image: url(data:image/svg+xml;charset=UTF-8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2011.893%206.503%27><polygon%20fill%3D%27%23666666%27%20points%3D%2711.893%2C0.559%2011.336%2C0%205.947%2C5.39%200.559%2C0%200%2C0.559%205.947%2C6.503%27%2F><%2Fsvg>);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+}
+.search-form form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 0;
+    background: none;
+    width: 100%;
+    display: block;
+    height: 40px;
+}
+.car-item {
+    background-color: #fff;
+    box-shadow: 0 3px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    transition: .3s;
+}
+.car-item:hover {
+    box-shadow: 0 3px 0 rgb(121, 44, 131);
+}
+.car-item>header>*{
+    padding: 0 15px 1px 15px;
+}
+.car-item figure {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+.car-item figure img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    transition: .3s;
+}
+.car-item:hover figure img {
+    transform: scale(1.1)
+}
+.car-item figure::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(-180deg,rgba(255,254,254,.07),hsla(0,0%,54%,.18) 40%,rgba(0,0,0,.3) 88%);
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    padding: 56.25% 0 0;
+    overflow: hidden;
+}
+.car-item h2 {
+    font-size: 24px;
+}
+.car-item .rating i {
+    color: #792c83;
+}
+.car-item .price small {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+}
+.car-item .price p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.car-item .price .w-tax {
+    color: green;
+}

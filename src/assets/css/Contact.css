@@ -1,0 +1,54 @@
+.contact-info {
+    background-color: #792c83;
+    text-align: center;
+}
+.contact-info h2 {
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-family: "Raleway", arial, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+}
+.contact-info ul li {
+    padding: 20px 0;
+    text-align: left;
+    border-bottom: 1px solid #8e3a9a;
+}
+
+.contact-info ul li h4{
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-family: "Raleway", arial, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.contact-info ul li a{
+    color: rgba(255,255,255,1);
+}
+.contact-info ul li p{
+    margin: 0;
+    color: rgba(255,255,255,.7);
+}
+.contact-info .social-icons{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact-info .social-icons a{
+    font-size: 22px;
+    margin-right: 6px;
+    color: rgba(255,255,255,.7);
+    transition: all .3s ease;
+}
+.contact-info .social-icons a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}

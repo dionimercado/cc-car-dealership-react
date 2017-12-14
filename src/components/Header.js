@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../assets/css/General.css';
 import '../assets/css/Header.css';
 
 const Header = () => (
@@ -11,14 +13,14 @@ const Header = () => (
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="/"><img src="assets/images/logo.png" alt="Cars Dealership" /></a>
+            <NavLink className="navbar-brand" to="/"><img src="assets/images/logo.png" alt="Cars Dealership" /></NavLink>
         </div>
         <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
-                <li className="active"><a href="/">Home</a></li>
-                <li><a href="/inventory">Inventory</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li className="active"><NavLink  to="/">Home</NavLink></li>
+                <li><NavLink to="/inventory">Inventory</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
         </div>
     </div>

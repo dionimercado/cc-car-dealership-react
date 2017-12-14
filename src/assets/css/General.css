@@ -1,0 +1,37 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 82px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #792c83;
+    border-color: #792c83;
+    transition: all .3s ease;
+    text-transform: uppercase;
+}
+.btn-primary:hover {
+    background-color: #4f3c78;
+    border-color: #4f3c78;
+}
+
+
+.page-header {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 0;
+}
+.page-header::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 1px;
+    background-color: #792c83;
+}
+.page-header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}

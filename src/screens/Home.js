@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Header, Footer } from '../components';
 
 const Home = () => (
@@ -11,7 +12,7 @@ const Home = () => (
             <video autoplay loop className="d-none">
               <source src="assets/videos/video.mp4" type="video/mp4" />
             </video>
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/j-eAsQk0Bwg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1"></iframe>
+            <iframe title="video" className="embed-responsive-item" src="https://www.youtube.com/embed/j-eAsQk0Bwg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1"></iframe>
           </div>
         </div>
         <div className="container">
@@ -37,7 +38,7 @@ const Home = () => (
             </figure>
             <h2>2018 Hyundai Sonata</h2>
             <p>It's not a full redesign, but this quiet, comfortable sedan has significantly improved in looks, interior feel and driving dynamics.</p>
-            <p><a className="btn btn-default" href="/inventory" role="button">See our inventory &raquo;</a></p>
+            <p><NavLink className="btn btn-default" to="/inventory" role="button">See our inventory &raquo;</NavLink></p>
           </div>
           <div className="col-sm-6">
             <figure>
@@ -45,7 +46,7 @@ const Home = () => (
             </figure>
             <h2>2018 Chevrolet Equinox</h2>
             <p>The redesigned Equinox is less distinctive than its predecessor, but it arrives with definite refinement.</p>
-            <p><a className="btn btn-default" href="/inventory" role="button">See our inventory &raquo;</a></p>
+            <p><NavLink className="btn btn-default" to="/inventory" role="button">See our inventory &raquo;</NavLink></p>
           </div>
         </div>
       </div>
